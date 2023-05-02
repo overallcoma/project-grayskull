@@ -1,7 +1,5 @@
 import ujson
-import binascii
 import time
-from umqtt.simple import MQTTClient
 from common import get_mqtt_cfg
 from common import get_network_cfg
 from common import get_machine_id
