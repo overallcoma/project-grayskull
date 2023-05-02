@@ -3,6 +3,7 @@ from atm90e32_ctl import atm90e32_ctl
 import ujson
 from common import get_machine_id
 
+
 def collect():
     spiConn = atm90e32_spi()
     config_file = open("config.json")
@@ -13,11 +14,9 @@ def collect():
     pgagain = sensors_config["pgagain"]
     ugain = sensors_config["ugain"]
 
-
     def amps_calc(watts, volts):
         amps = int(watts) / int(volts)
         return amps
-
 
     def get_sensor_status(sensornumber):
         sensornumber = str(sensornumber)

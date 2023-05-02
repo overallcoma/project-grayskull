@@ -7,7 +7,6 @@ from sensor_collect import collect
 from mqtt_as import MQTTClient
 from mqtt_local import config
 import uasyncio as asyncio
-import machine
 
 
 ####################################################################
@@ -48,19 +47,16 @@ def mqtt_send_loop():
     async_config['ping_interval'] = 0    
     will_statement = str(get_machine_id()) + " has lost connection."
     async_config['will'] = [async_config['topic'], will_statement, False, 0]
-    
-    
+
     async def messages(client):  # Respond to incoming messages
         async for topic, msg, retained in client.queue:
             print((topic, msg, retained))
-            
 
     async def up(client):  # Respond to connectivity being (re)established
         while True:
             await client.up.wait()  # Wait on an Event
             client.up.clear()
             await client.subscribe(async_config['topic'], 1)  # renew subscriptions
-
 
     async def main(client):
         await client.connect()

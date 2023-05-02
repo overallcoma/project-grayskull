@@ -54,9 +54,8 @@ class WifiManager:
         if network_config["type"] == "wifi":
             ssid = network_config["ssid"]
             password = network_config["password"]
-            while wifi_is_connected == 0:
-                if self.wifi_connect(ssid, password):
-                    return
+            if self.wifi_connect(ssid, password):
+                return
         print('Could not connect to any WiFi network. Starting the configuration portal...')
         self.web_server()
         
