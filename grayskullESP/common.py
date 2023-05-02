@@ -1,6 +1,5 @@
 import ujson
 import binascii
-
 import machine
 
 
