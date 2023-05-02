@@ -3,18 +3,4 @@
 /.idea/project-grayskull.iml
 /.idea/vcs.xml
 /.idea
-/cmake-build-debug-mingw/
-/grayskullESP/config.json
-/digikey-kicad-library/
-/cmake-build-debug/
-/cmake-build-release/
-/esptool/
-/EmonESP/
-/cmake-build-debug-mingw/
-/Meter Board/
-/micropython/
-/micropython-wifi_manager-main/
-/MicroWebSrv/
-/SparkFun-KiCad-Libraries/
-/digikey-kicad-library/
 
