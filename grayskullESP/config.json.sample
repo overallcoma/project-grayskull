@@ -1,0 +1,85 @@
+{
+	"nodeConfig": {
+		"mqtt": {
+			"server": "55.44.33.77",
+			"port": 8883,
+			"user": "mqttuser",
+			"password": "mqttpass",
+			"ssl": true,
+			"topic": "topic/topic",
+			"debug": true
+		},
+		"network": {
+			"type": "wifi",
+			"ssid": "myssid",
+			"password": "mywifipassword",
+			"reboot": true,
+			"debug": false
+		},
+		"sensors": {
+			"linefreq": 4231,
+			"pgagain": 0,
+			"ugain": 7305,
+			"sensor0": {
+				"pin": 5,
+				"name": "SensorName1",
+				"gain": 11131,
+				"multiplier": 1
+			},
+			"sensor1": {
+				"pin": 4,
+				"name": "NA",
+				"gain": 11131,
+				"multiplier": 1
+			},
+			"sensor2": {
+				"pin": 0,
+				"name": "SensorName3",
+				"gain": 11131,
+				"multiplier": 1
+			},
+			"sensor3": {
+				"pin": 16,
+				"name": "NA",
+				"gain": 11131,
+				"multiplier": 1
+			},
+			"sensor4": {
+				"pin": 27,
+				"name": "NA",
+				"gain": 11131,
+				"multiplier": 1
+			},
+			"sensor5": {
+				"pin": 17,
+				"name": "NA",
+				"gain": 11131,
+				"multiplier": 1
+			},
+			"sensor6": {
+				"pin": 2,
+				"name": "NA",
+				"gain": 11131,
+				"multiplier": 1
+			},
+			"sensor7": {
+				"pin": 21,
+				"name": "NA",
+				"gain": 11131,
+				"multiplier": 1
+			},
+			"sensor8": {
+				"pin": 13,
+				"name": "NA",
+				"gain": 11131,
+				"multiplier": 1
+			},
+			"sensor9": {
+				"pin": 22,
+				"name": "NA",
+				"gain": 11131,
+				"multiplier": 1
+			}
+		}
+	}
+}
